@@ -17,4 +17,4 @@ Rendez vous sur <a href="https://exantrix.com/">Exantrix.com</a>
 
 
 <div class="Box-sc-g0xbh4-0 bDycpP">
-<img alt="logo.jpg" src="https://github.com/tony-dev-web/exantrix.com/blob/main/logo.jpg?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm"></div>
+<img alt="logo.jpg" src="https://github.com/tony-dev-web/exantrix.com/blob/main/logo2.jpg?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm"></div>
