@@ -12,3 +12,5 @@ Les véhicules : Des accessoires pour personnaliser et améliorer votre voiture 
 La décoration : Des éléments pour ajouter une touche unique à votre espace.
 
 Le but d'Exantrix.com est de partager l'univers du "making" en proposant des objets qui sortent de l'ordinaire, créés par leur équipe pour des personnes curieuses. C'est une plateforme pour ceux qui cherchent des produits utiles du quotidien qui allient ingéniosité et design.
+
+Rendez vous sur <a href="https://exantrix.com/">Extranxtix.com</a>
