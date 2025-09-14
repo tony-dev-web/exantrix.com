@@ -14,3 +14,6 @@ La décoration : Des éléments pour ajouter une touche unique à votre espace.
 Le but d'Exantrix.com est de partager l'univers du "making" en proposant des objets qui sortent de l'ordinaire, créés par leur équipe pour des personnes curieuses. C'est une plateforme pour ceux qui cherchent des produits utiles du quotidien qui allient ingéniosité et design.
 
 Rendez vous sur <a href="https://exantrix.com/">Exantrix.com</a>
+
+
+<div class="Box-sc-g0xbh4-0 bDycpP"><img alt="logo.png" src="https://github.com/tony-dev-web/exantrix.com/blob/main/logo.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm"></div>
