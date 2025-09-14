@@ -16,4 +16,5 @@ Le but d'Exantrix.com est de partager l'univers du "making" en proposant des obj
 Rendez vous sur <a href="https://exantrix.com/">Exantrix.com</a>
 
 
-<div class="Box-sc-g0xbh4-0 bDycpP"><img alt="logo.png" src="https://github.com/tony-dev-web/exantrix.com/blob/main/logo.png?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm"></div>
+<div class="Box-sc-g0xbh4-0 bDycpP">
+<img alt="logo.jpg" src="https://github.com/tony-dev-web/exantrix.com/blob/main/logo.jpg?raw=true" data-hpc="true" class="Box-sc-g0xbh4-0 fzFXnm"></div>
