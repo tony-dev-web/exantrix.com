@@ -1,9 +1,6 @@
-#from django.contrib.postgres.search import SearchVector
+
 from django.db import models
-##from django.db.models import Q
-#from django.template.defaultfilters import slugify
 from django.urls import reverse
-from django.utils.functional import cached_property
 
 
 class CommandeManager(models.Manager):
@@ -24,8 +21,6 @@ class CommandeModel(models.Model):
     commande_paiement = models.IntegerField(null=True, blank=True, default="1")
     commande_paiement_reponse =  models.IntegerField(null=True, blank=True, default="1")
     
-    #panier_panier_id = models.IntegerField(null=True, blank=True, default="1")
-
     commande_utilisateur_id = models.IntegerField(null=True, blank=True, default="1")
     commande_liv_nom = models.CharField(blank=True, max_length=50)
     commande_liv_prenom = models.CharField(blank=True, max_length=50)
@@ -59,18 +54,8 @@ class CommandeModel(models.Model):
         return self.commande_id
 
     class Meta:
-        #db_table = 'so_prod'
-        # default_related_name = 'AnnonceModel'
         indexes = [models.Index(fields=["commande_id", "commande_date","commande_utilisateur_id"], )]
-        #ordering = ['-produit_id']
         verbose_name = 'Commande'
-
-   # @cached_property
-    #def url_frontend(self):
-      #  return reverse('commande_url', args=[ self.slug, self.commande_id])
-
-
-
 class PanierManager(models.Manager):
     pass
 
@@ -80,11 +65,8 @@ class PanierModel(models.Model):
     panier_titre = models.CharField(null=True,max_length=150)
     panier_produit_id = models.IntegerField(null=True, blank=True, default="1")
     panier_langue = models.CharField(max_length=150)
-    panier_session = models.CharField(null=True,max_length=150)
     panier_url = models.CharField(null=True,max_length=150)
     panier_date = models.DateTimeField(null=True, auto_now_add=True)
-    #panier_date_update = models.DateField(null=True)
-    panier_signalement = models.IntegerField(null=True, blank=True, default="1")
     panier_marque = models.CharField(blank=True, max_length=50, null=True)
     panier_vues = models.IntegerField(null=True, blank=True, default="0")
     panier_stock = models.IntegerField(null=True, blank=True, default="1")
@@ -100,8 +82,6 @@ class PanierModel(models.Model):
     panier_prix_ht_total = models.DecimalField(max_digits=12, decimal_places=2,default=0, null=True, blank=True)
     
     panier_fichiers1 = models.FileField(null=True, blank=True,upload_to ='telechargement/%d/%m/%Y/')
-    panier_fichiers2 = models.FileField(null=True, blank=True,upload_to ='telechargement/%d/%m/%Y/')
-    panier_fichiers3 = models.FileField(null=True, blank=True,upload_to ='telechargement/%d/%m/%Y/')
     
     panier_information = models.TextField(null=True, blank=True,max_length=1255)
     
@@ -111,17 +91,8 @@ class PanierModel(models.Model):
         return self.panier_titre
 
     class Meta:
-        #db_table = 'so_prod'
-        # default_related_name = 'AnnonceModel'
         indexes = [models.Index(fields=["panier_id", "panier_utilisateur_id","panier_session"], )]
-        #ordering = ['-produit_id']
         verbose_name = 'Panier'
-
-
-    #@cached_property
-    #def url_frontend(self):
-     #   return reverse('panier_url', args=[ self.slug, self.materiaux-id])
-
 
 class DevisManager(models.Manager):
     pass
@@ -144,17 +115,13 @@ class DevisModel(models.Model):
     devis_connu = models.CharField(null=True, blank=True,max_length=150)
 
     devis_fichiers = models.FileField(null=True, blank=True,upload_to ='telechargement/%d/%m/%Y/')
-    # models.FileField(upload_to=lambda instance, filename: '/'.join(['mymodel', str(instance.pk), filename]),)
 
     obj = DevisManager()
     def __str__(self):
         return f'{ self.devis_email } - {self.devis_information} - {self.devis_email}'
 
     class Meta:
-        #db_table = 'so_prod'
-        # default_related_name = 'AnnonceModel'
         indexes = [models.Index(fields=["devis_utilisateur_id", "devis_date", "devis_email"], )]
-        #ordering = ['-produit_id']
         verbose_name = 'Devis'
         
         
@@ -177,17 +144,9 @@ class LivraisonModel(models.Model):
         return self.livraison_nom
 
     class Meta:
-        #db_table = 'so_prod'
-        # default_related_name = 'AnnonceModel'
         indexes = [models.Index(fields=["livraison_nom"], )]
-        #ordering = ['-produit_id']
         verbose_name = 'Livraison'
         
-        
-        
-
-
-
 class FicheManager(models.Manager):
     pass
 
@@ -210,7 +169,6 @@ class FicheModel(models.Model):
     fiche_fichier_url = models.CharField(max_length=150)
     fiche_solution = models.CharField(max_length=150)
     fiche_information = models.TextField(max_length=255)
-    fiche_connu = models.CharField(max_length=150)
     fiche_lieu = models.CharField(max_length=150)
 
     obj = FicheManager()
@@ -218,8 +176,4 @@ class FicheModel(models.Model):
         return self.fiche_solution
 
     class Meta:
-        #db_table = 'so_prod'
-        # default_related_name = 'AnnonceModel'
-        #indexes = [models.Index(fields=["titre", "description"], )]
-        #ordering = ['-produit_id']
         verbose_name = 'Fiche'
