@@ -36,17 +36,6 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'core.urls'
 
-USER_AGENTS_CACHE = 'default'
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://xxx\1",
-        'KEY_PREFIX': 'xx',
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-            "TIMEOUT": 1209600,
-            "COMPRESSOR": "django_redis.compressors.zlib.ZlibCompressor"}}}
-
 
 TEMPLATES = [
     {
