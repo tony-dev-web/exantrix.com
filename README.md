@@ -26,5 +26,7 @@ Vendez sur Exantrix depuis votre boutique : extensions open source, guides sur h
 - [WordPress / WooCommerce](https://github.com/tony-dev-web/exantrix-marketplace-wordpress) — plugin « Exantrix Marketplace »
 - [PrestaShop 1.7 / 8](https://github.com/tony-dev-web/exantrix-marketplace-prestashop) — module « exantrix »
 - [Shopify](https://github.com/tony-dev-web/exantrix-marketplace-shopify) — app personnalisée et webhooks
+- Magento 2 : https://github.com/tony-dev-web/exantrix-marketplace-magento
+- Drupal Commerce : https://github.com/tony-dev-web/exantrix-marketplace-drupal
 
 API vendeur (JSON, jeton) : catalogue, stock, commandes, expédition, notification signée à chaque commande payée.
